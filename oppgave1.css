@@ -1,0 +1,47 @@
+/*
+//  Oppgave 1
+//  CSS
+//
+//  Created by Joakim Jorde on 30.08.2016.
+//  Copyright © 2016 Jorde Industries. All rights reserved.
+*/
+
+#mainRute{position: absolute;
+	background-color: #ffffff;
+	width: 600px;
+	height:600px;
+	border:  solid 4px brown;
+	padding: 10px;
+	margin: 30px;
+	}
+
+#rute{position: relative;
+	background-color: #ffffff;
+	width: 174px;
+	height:174px;
+	border:  solid 3px brown;
+	margin: 10px;
+	float: left;
+
+	}
+
+#blue{position: absolute;
+	background-color: lightblue;
+	width: 154px;
+	height:154px;
+	margin-bottom: 10px;
+	margin: 10px;
+	}
+
+#pink{position: absolute;
+	background-color: pink;
+	width: 154px;
+	height:154px;
+	margin-bottom: 10px;
+	margin: 10px;
+	}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+}
