@@ -1,0 +1,167 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#252525; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #888888;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em; color: #ffffff;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#wrapper {
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+} 
+/*Hoved vindu*/
+#main {
+	width: 100%;
+	margin-right: 5%;
+	float: left;
+
+}		
+/*De tre spaltene*/	
+#spalte1 {
+	width: 20%;
+	float: left;
+	display: block;
+	position: relative;
+}
+#spalte2{
+	width: 60%;
+	float: left;
+	display: block;
+	position: relative;
+}
+#spalte3{
+	width: 20%;
+	float: left;
+	display: block;
+	position: relative;
+}
+
+
+footer{
+	margin-top: 10px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	float: left;
+}
+footer p{
+	color: #777777;
+	margin-top: 50px; 
+}
+
+/* Logo H1 */
+header h1 {
+height: 100px;
+width: 100px;
+float: left;
+display: block;
+background: url(images/logo.png)  0 0 no-repeat;
+text-indent: -9999px;
+}
+header nav li:hover{
+	cursor: pointer;
+	background: yellow;
+}
+/* Nav */
+header nav {
+float: right;
+margin-top: 40px;
+}
+/*Knapper ser jævelig ut, så man tydelig ser forandring til mobil versjon */
+header nav li {
+display: inline;
+margin-left: 15px;
+margin-bottom: 30px;
+background: #757575;
+border-radius: 10px;
+display: block;
+float: left;
+padding: 5px;
+font-size: 200%;
+}
+/*Skjuler skip to knapp, så den kun er synelig på mobile plattformer*/
+#skipTo {
+display: none;
+}
+#skipTo li {
+background: #b1fffc;
+}
+/* Banner */
+#banner {
+float: left;
+margin-bottom: 15px;
+width: 100%;
+}
+#banner img {
+width: 100%;
+height: auto;
+}
+
+/* Media Queries Mobil verson*/ 
+@media screen and (max-width: 480px) 
+{
+	/*Viser skipTo knapp*/
+	#skipTo {
+	display: block;
+	}
+	#banner img {
+	float: center;
+	}
+	/*Legger Spaltene etter hverndre*/
+	#spalte1 {
+		width: 100%;
+		float: left;
+		display: block;
+		position: relative;
+	}
+	#spalte2{
+		width: 100%;
+		float: left;
+		display: block;
+		position: relative;
+	}
+	#spalte3{
+		width: 100%;
+		float: left;
+		display: block;
+		position: relative;
+	}
+
+	header nav, #main, aside {
+	float: left;
+	clear: left;
+	margin: 0 0 10px;
+	width: 100%;
+	}
+	header nav li {
+	margin: 0;
+	background: #efefef;
+	display: block;
+	margin-bottom: 3px;
+	border-radius: 0px;
+	float: none;
+	font-size: 100%;
+	}
+	header nav a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	}
+
+	header nav li:hover {
+		background-color: #252525;
+	}
+}
